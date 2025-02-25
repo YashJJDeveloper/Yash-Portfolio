@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(./assets/calcbg.jpg);
+                background-repeat: no-repeat;
+            background-size:cover;
+            background-position:center;
+            overflow: scroll;
+            }
+            .main-box{
+                display: flex;
+                flex-direction: column;
+                height: 55vh;
+                width: 40vw;
+                border: 1px black solid;
+                border-radius: 2%;
+                margin-left: 20vw;
+                margin-top: 5vh;
+                background-color: gray;
+            }
+            #display{
+                height: 30%;
+                width: 100%;
+                background-color: rgba(46, 43, 43, 0.729);
+                color: white;
+                text-align: end;
+                border-radius: 2%;
+
+            }
+            .keypad{
+                height: 60%;
+                width: 100%;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                background-color: rgba(74, 70, 70, 0.722);
+                border-radius: 2%;
+            }
+            .last{
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr;
+                height: 10%;
+                background-color: rgba(70, 69, 69, 0.752);
+                border-radius: 2%;
+            }
+            .yellow{
+                background-color: rgba(255, 166, 0, 0.705);
+                border-radius: 10%;
+            }
+            .gray{
+                background-color: gray;
+                border-radius: 10%;
+            }
+            .button{
+                background-color: rgba(211, 211, 211, 0.612);
+                border-radius: 10%;
+            }
+            #number{
+                background-color: black;
+                color: white;
+                border-radius: 2%;
+            }
+
+           
+        </style>
+        <script>
+            let total = 0;
+            let displayString = "";
+            let action=0;
+
+            function numberTyped(passednumber){
+                displayString = displayString + passednumber.toString();
+                document.getElementById("display").innerHTML = displayString;
+            }
+            function add(){
+                total =   Number(displayString);
+                action=1;
+                displayString = "";
+                document.getElementById("display").innerHTML =  displayString;  
+            }
+            function sub(){
+                total =   Number(displayString);
+                action=2;
+                displayString = "";
+                document.getElementById("display").innerHTML =  displayString;
+            }
+            function into(){
+                total =   Number(displayString);
+                action=3;
+                displayString = "";
+                document.getElementById("display").innerHTML =  displayString;
+            }
+            function div(){
+                total =   Number(displayString);
+                action=4;
+                displayString = "";
+                document.getElementById("display").innerHTML =  displayString;
+            }
+            function percentage(){ 
+                action=5;
+                total =   Number(displayString);
+                displayString = "";
+                document.getElementById("display").innerHTML =  displayString;
+            }
+            function showResult(){ 
+                if (action==1){total = total + Number(displayString);}
+                else if (action==2){total=total -  Number(displayString);}
+                else if (action==3){total=total *  Number(displayString);}
+                else if (action==4){total=total /  Number(displayString);}
+                else if (action==5){total=total %  Number(displayString);}
+                
+                displayString = total;
+                document.getElementById("display").innerHTML = displayString;
+            }
+            function Backspace(){
+                displayString =  displayString.substring(0, displayString.length -1);
+                document.getElementById("display").innerHTML = displayString;
+            }
+            function clearFunction(){
+                document.getElementById("display").innerHTML=""
+                total = Number(displayString);
+                displayString = "";
+            }
+           
+        </script>
+    </head>
+    <body>
+        <!-- main-box -->
+        <div class="main-box">
+        <!-- display -->
+        <div id="display"> </div>
+        <!-- keypad -->
+        <div class="keypad">
+            <button class="gray" onclick="clearFunction()">AC</button>
+            <button class="gray" onclick="Backspace()">🔙</button>
+            <button class="yellow" onclick="percentage()">%</button>
+            <button class="yellow" onclick="div()">/</button>
+            <button class="button"  onclick="numberTyped(7)">7</button>
+            <button class="button" onclick="numberTyped(8)">8</button>
+            <button class="button" onclick="numberTyped(9)">9</button>
+            <button class="yellow" onclick="into()">*</button>
+            <button class="button" onclick="numberTyped(4)">4</button>
+            <button class="button" onclick="numberTyped(5)">5</button>
+            <button class="button" onclick="numberTyped(6)">6</button>
+            <button class="yellow" onclick="sub()">-</button>
+            <button class="button" onclick="numberTyped(1)">1</button>
+            <button class="button" onclick="numberTyped(2)">2</button>
+            <button class="button" onclick="numberTyped(3)">3</button>
+            <button class="yellow" onclick="add()">+</button>
+            
+        </div>
+        <div class="last">
+            <button class="button" onclick="numberTyped(0)">0</button>
+            <button class="button" onclick="numberTyped()">.</button>
+            <button class="yellow" onclick="showResult()">=</button>
+        </div>
+    </div>
+    </body>
+</html>

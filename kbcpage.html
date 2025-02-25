@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KBC</title>
+    <style>
+        .main-container {
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* start button */
+        .start-button {
+            height: 65px;
+            width: 170px;
+            background-color: #030637;
+            font-size: 20px;
+            color: white;
+            border-radius: 60%;
+            margin: 30px;
+        }
+
+        /* display */
+        .display {
+            width: 90%;
+            height: 200px;
+            background-color: #030637;
+            margin-left: 5%;
+            border-radius: 50px;
+            /* margin-top: 100px; */
+            border-style: solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-display {
+            font-size: 50px;
+            color: white;
+           
+        }
+
+        .button {
+            height: 70px;
+            width: 550px;
+            border-radius: 250px;
+            margin: 10px;
+            margin-left: 6%;
+            margin-top: 40px;
+            background-color: #0B60B0;
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+
+        }
+    </style>
+    <script>
+        let questionNumber = 0;
+
+        function questionOne() {
+            document.getElementById("text-display").innerHTML =
+                "Who was the first person in the World to walk on the Moon?";
+            document.getElementById("answer-one").innerHTML = "A) Buzz Aldrin";
+            document.getElementById("answer-two").innerHTML = "B)  Michael Collins";
+            document.getElementById("answer-three").innerHTML = "C) Rakesh Sharma";
+            document.getElementById("answer-four").innerHTML = "D) Neil Armstrong";
+        }
+
+        function questionTwo() {
+            document.getElementById("text-display").innerHTML =
+                "Who is known as 'Magician of Hockey'?";
+            document.getElementById("answer-one").innerHTML = "A) Shreejesh";
+            document.getElementById("answer-two").innerHTML = "B) Major Dhyanchand";
+            document.getElementById("answer-three").innerHTML = "C) Dhanraj Pillay";
+            document.getElementById("answer-four").innerHTML = "D) Balbir Singh Sr";
+        }
+
+        function questionThree() {
+            document.getElementById("text-display").innerHTML =
+                "CPU is also referred to as?";
+            document.getElementById("answer-one").innerHTML = "A) Micro chip";
+            document.getElementById("answer-two").innerHTML = "B) Microprocessor";
+            document.getElementById("answer-three").innerHTML = "C) Decoder";
+            document.getElementById("answer-four").innerHTML = "D) Coder";
+        }
+
+        function questionFour() {
+            document.getElementById("text-display").innerHTML =
+                "Who is the Current President of India?";
+            document.getElementById("answer-one").innerHTML = "A) Mamta Banarjee";
+            document.getElementById("answer-two").innerHTML = "B) Hon. Ramnath Kovind";
+            document.getElementById("answer-three").innerHTML = "C) Hon. Draupadi Murmu";
+            document.getElementById("answer-four").innerHTML = "D) Pranab Mukherji ";
+        }
+        // five
+        function questionFive() {
+            document.getElementById("text-display").innerHTML =
+                "When the First World-War ended?";
+            document.getElementById("answer-one").innerHTML = "A) 1947";
+            document.getElementById("answer-two").innerHTML = "B) 1918 ";
+            document.getElementById("answer-three").innerHTML = "C) 1656";
+            document.getElementById("answer-four").innerHTML = "D) 1920";
+        }
+        // six
+        function questionSix() {
+            document.getElementById("text-display").innerHTML =
+                "In which part of the World The Sun rises once in Six months?";
+            document.getElementById("answer-one").innerHTML = "A) Polar Region";
+            document.getElementById("answer-two").innerHTML = "B) Russia";
+            document.getElementById("answer-three").innerHTML = "C) Green-land";
+            document.getElementById("answer-four").innerHTML = "D) Mt. Everest";
+        }
+        // seven
+        function questionSeven() {
+            document.getElementById("text-display").innerHTML =
+                "Which city is known as Pink City in India?";
+            document.getElementById("answer-one").innerHTML = "A) Banglore";
+            document.getElementById("answer-two").innerHTML = "B) Maysore";
+            document.getElementById("answer-three").innerHTML = "C) Kochi";
+            document.getElementById("answer-four").innerHTML = "D) Jaipur";
+        }
+        // eight
+        function questionEight() {
+            document.getElementById("text-display").innerHTML =
+                "Which part of India has the most rainfall in the world?";
+            document.getElementById("answer-one").innerHTML = "A)Assam";
+            document.getElementById("answer-two").innerHTML = "B) Kashmir";
+            document.getElementById("answer-three").innerHTML = "C) Mawsynram";
+            document.getElementById("answer-four").innerHTML = "D) Mumbai";
+        }
+        // nine
+        function questionNine() {
+            document.getElementById("text-display").innerHTML =
+                " Who established Hindavi-Swaraj all over Deccan India in Moghal Era?";
+            document.getElementById("answer-one").innerHTML = "A) Maharana Pratap";
+            document.getElementById("answer-two").innerHTML = "B) Prithvi Raj Chouhan";
+            document.getElementById("answer-three").innerHTML = "C) Chhatrapati Shivaji Maharaj";
+            document.getElementById("answer-four").innerHTML = "D) Bajirao Peshwa";
+        }
+        // ten
+        function questionTen() {
+            document.getElementById("text-display").innerHTML =
+                "When is the National Hindi Diwas celebrated?";
+            document.getElementById("answer-one").innerHTML = "A) 13 Septembe";
+            document.getElementById("answer-two").innerHTML = "B) 14 Septembe";
+            document.getElementById("answer-three").innerHTML = "C) 14 July";
+            document.getElementById("answer-four").innerHTML = "D) 15 August";
+        }
+        // eleven
+        function questionEleven() {
+            document.getElementById("text-display").innerHTML =
+                "Which of the following musical instruments is of Indian origin?";
+            document.getElementById("answer-one").innerHTML = "A) Tabla";
+            document.getElementById("answer-two").innerHTML = "B) Mrudang ";
+            document.getElementById("answer-three").innerHTML = "C) Flute";
+            document.getElementById("answer-four").innerHTML = "D) All of the above";
+        }
+        // twelve
+        function questionTwelve() {
+            document.getElementById("text-display").innerHTML =
+                "Who introduced 'Zero' to the World? ";
+            document.getElementById("answer-one").innerHTML = "A) Nicolas Tesla";
+            document.getElementById("answer-two").innerHTML = "B) Albert Einstien";
+            document.getElementById("answer-three").innerHTML = "C) Thomas Edison";
+            document.getElementById("answer-four").innerHTML = "D) Aryabhatta";
+        }
+        // thirteen
+        function questionThirteen() {
+            document.getElementById("text-display").innerHTML =
+                "Which is the Heaviest snake?";
+            document.getElementById("answer-one").innerHTML = "A) Viper";
+            document.getElementById("answer-two").innerHTML = "B) Reticulated Python";
+            document.getElementById("answer-three").innerHTML = "C) Anaconda";
+            document.getElementById("answer-four").innerHTML = "D) Boa Constrictor";
+        }
+        // fourteen
+        function questionFourteen() {
+            document.getElementById("text-display").innerHTML =
+                "Which Bird has the largest wing span?";
+            document.getElementById("answer-one").innerHTML = "A) Ostrich";
+            document.getElementById("answer-two").innerHTML = "B) Albatross";
+            document.getElementById("answer-three").innerHTML = "C) Eagle";
+            document.getElementById("answer-four").innerHTML = "D) Pelican";
+        }
+        // fifteen
+        function questionFifteen() {
+            document.getElementById("text-display").innerHTML =
+                " In which group of places the Kumbha Mela is held every twelve years?";
+            document.getElementById("answer-one").innerHTML = "A) Ujjain. Puri; Prayag. Haridwar";
+            document.getElementById("answer-two").innerHTML = "B) Prayag. Haridwar, Ujjain,. Nasik";
+            document.getElementById("answer-three").innerHTML = "C) Rameshwaram. Puri, Badrinath. Dwarika";
+            document.getElementById("answer-four").innerHTML = "D) Chittakoot, Ujjain, Prayag,'Haridwar";
+        }
+        // question
+        function question(question) {
+            document.getElementById("container").style.backgroundColor = "#030637";
+            resetColor()
+
+            if (question == 1) {
+                questionNumber = 1;
+                questionOne();
+            } else if (question == 2) {
+                questionNumber = 2;
+                questionTwo();
+            } else if (question == 3) {
+                questionNumber = 3;
+                questionThree();
+            }  else if (question == 4) {
+                questionNumber = 4;
+                questionFour();
+            }  else if (question == 5) {
+                questionNumber = 5;
+                questionFive();
+            }  else if (question == 6) {
+                questionNumber = 6;
+                questionSix();
+            }  else if (question == 7) {
+                questionNumber = 7;
+                questionSeven();
+            }  else if (question == 8) {
+                questionNumber = 8;
+                questionEight();
+            } else if (question == 9) {
+                questionNumber = 9;
+                questionNine();
+            }  else if (question == 10) {
+                questionNumber = 10;
+                questionTen();
+            }  else if (question == 11) {
+                questionNumber = 11;
+                questionEleven();
+            } else if (question == 12) {
+                questionNumber = 12;
+                questionTwelve();
+            } else if (question == 13) {
+                questionNumber = 13;
+                questionThirteen();
+            } else if (question == 14) {
+                questionNumber = 14;
+                questionFourteen();
+            } else if (question == 15) {
+                questionNumber = 15;
+                questionFifteen();
+            }
+            else {
+                alert("You Have Passed the Quiz, Congratulations")
+                startScreen()
+            }
+        }   
+
+        // correct ans
+        function answer(givenAnswer) {
+            if (questionNumber == 1) {
+                if (givenAnswer == 4) {
+                    answerOne(true, 2);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 2) {
+                if (givenAnswer == 2) {
+                    answerOne(true, 3);
+                } else {
+                    answerOne(false, 0, givenAnswer, 2);
+                }
+            } else if (questionNumber == 3) {
+                if (givenAnswer == 2) {
+                    answerOne(true, 4);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 4) {
+                if (givenAnswer == 3) {
+                    answerOne(true, 5);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 5) {
+                if (givenAnswer == 2) {
+                    answerOne(true, 6);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 6) {
+                if (givenAnswer == 1) {
+                    answerOne(true, 7);
+                } else {
+                    answerOne(false, 0);
+                }
+            }  else if (questionNumber == 7) {
+                if (givenAnswer == 4) {
+                    answerOne(true, 8);
+                } else {
+                    answerOne(false, 0);
+                }
+            }  else if (questionNumber == 8) {
+                if (givenAnswer == 3) {
+                    answerOne(true, 9);
+                } else {
+                    answerOne(false, 0);
+                }
+            }   else if (questionNumber == 9) {
+                if (givenAnswer == 3) {
+                    answerOne(true, 10);
+                } else {
+                    answerOne(false, 0);
+                }
+            }  else if (questionNumber == 10) {
+                if (givenAnswer == 2) {
+                    answerOne(true, 11);
+                } else {
+                    answerOne(false, 0);
+                }
+            }    else if (questionNumber == 11) {
+                if (givenAnswer == 4) {
+                    answerOne(true, 12);
+                } else {
+                    answerOne(false, 0);
+                }
+            }  else if (questionNumber == 12) {
+                if (givenAnswer == 4) {
+                    answerOne(true, 13);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 13) {
+                if (givenAnswer == 3) {
+                    answerOne(true, 14);
+                } else {
+                    answerOne(false, 0);
+                }
+            }   else if (questionNumber == 14) {
+                if (givenAnswer == 2) {
+                    answerOne(true, 15);
+                } else {
+                    answerOne(false, 0);
+                }
+            }   else if (questionNumber == 15) {
+                if (givenAnswer == 2) {
+                    answerOne(true, 16);
+                } else {
+                    answerOne(false, 0);
+                }
+            }                
+        }
+        // correct or not
+        function answerOne(correctAnswer, nextQuestion, buttonClick, correctAnswerButton) {
+            if (correctAnswer) {
+                document.getElementById("text-display").innerHTML =
+                    "Bilkul Sahi Jawab";
+                document.getElementById("container").style.backgroundColor =
+                    "#004225";
+                    coloringButtons(correctAnswerButton, buttonClick)
+                setTimeout(() => {
+                    question(nextQuestion);
+                }, 3000);
+            } else{
+                document.getElementById("text-display").innerHTML =
+                    " Galat Jawab.";
+                document.getElementById("container").style.backgroundColor =
+                    "#FF0000";
+                    coloringButtons(correctAnswerButton, buttonClick)
+                setTimeout(() => {
+                    startScreen();
+                }, 2000);
+            }
+        }
+
+        function coloringButtons(greenButton, redbutton){
+
+            if(greenButton == redbutton){
+                redbutton = 5
+            }
+            if(greenButton == 1){
+                document.getElementById("answer-one").style.backgroundColor = "#9BCF53"
+            }else if(greenButton == 2){
+                document.getElementById("answer-two").style.backgroundColor = "#9BCF53"
+            } else if(greenButton == 3){
+                document.getElementById("answer-three").style.backgroundColor = "#9BCF53"
+            } else if(greenButton == 4){
+                document.getElementById("answer-four").style.backgroundColor = "#9BCF53"
+            }
+
+            if(redbutton == 1){
+                document.getElementById("answer-one").style.backgroundColor = "#EE4266"
+            }else if(redbutton == 2){
+                document.getElementById("answer-two").style.backgroundColor = "#EE4266"
+            } else if(redbutton == 3){
+                document.getElementById("answer-three").style.backgroundColor = "#EE4266"
+            } else if(redbutton == 4){
+                document.getElementById("answer-four").style.backgroundColor = "#EE4266"
+            }
+
+        }
+        // hidden 
+        function dostart() {
+            document.getElementById("main-body").hidden = false;
+            document.getElementById("play-button").hidden = true;
+            resetColor()
+            question(1);
+        }
+
+        function startScreen() {
+            document.getElementById("main-body").hidden = true;
+            document.getElementById("play-button").hidden = false;
+            resetColor()
+            
+        }
+
+        function resetColor () {
+            document.getElementById("answer-one").style.backgroundColor = "#0B60B0"
+            document.getElementById("answer-two").style.backgroundColor = "#0B60B0"
+            document.getElementById("answer-three").style.backgroundColor = "#0B60B0"
+            document.getElementById("answer-four").style.backgroundColor = "#0B60B0"
+        }
+    </script>
+</head>
+
+<body  style="background-image: url(https://images.livemint.com/img/2022/07/12/1600x900/Kaun-Banega-Crorepati-1_1657603983822_1657604025637_1657604025637.webp); height: 100%; width: 100vw; background-repeat: no-repeat;">
+    <!-- start button -->
+    <button class="start-button" id="play-button" onclick="dostart()">LET"S START</button>
+    <!-- display -->
+    <div class="main-container" id="main-body" hidden="true">
+        <div class="display" id="container">
+            <h1 id="text-display" class="text-display"></h1>
+        </div>
+        <!-- buttons -->
+        <button class="button" id="answer-one" onclick="answer(1)"></button>
+        <button class="button" id="answer-two" onclick="answer(2)"></button>
+        <button class="button" id="answer-three" onclick="answer(3)"></button>
+        <button class="button" id="answer-four" onclick="answer(4)"></button>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artistic Swimm</title>
+    <link rel="icon" href="./poolasset/images/swim-logo.jpg">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- js -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-image: url(./poolasset/images/swim-team.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+       
+      }
+      .title-a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder ;
+        font-size: 0.35vw;
+        background-image: url(https://i3.wp.com/w0.peakpx.com/wallpaper/543/5/HD-wallpaper-shivaji-maharaj-shivaji-raje-god-shivaji-raje.jpg?resize=480%2C270&ssl=1);
+        -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       filter: drop-shadow(2px 2px 2px rgb(225, 203, 0));
+      }
+      .title-b {
+        font-weight: bolder;
+        background-image: url(https://img.freepik.com/premium-photo/realistic-4k-swimming-pool-white-background_1018896-4410.jpg);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(2px 2px 2px rgb(255, 128, 0));
+      }
+      h1 {
+      
+        margin-top: 5vh;
+      }
+      p {
+        color: rgb(0, 0, 0);
+        margin-top: 10vh;
+      }
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      .button-top{
+        display: none;
+        position: fixed;
+        z-index: 99;
+        cursor: pointer;
+        bottom: 20px;
+  right: 6vw;
+  background-color: teal;
+      }
+      .button-top:hover{
+        background-color: cadetblue;
+      }
+      .home-link{ 
+        text-decoration: none;
+        color: rgb(6, 6, 6);
+      } 
+      .home-link:hover{
+        text-decoration: none;
+        color: black;
+      }
+      .text-card{
+        color: white;
+      }
+      .button-links{
+        color: black; 
+        text-decoration: none;
+        margin-top: -8vh;
+      }
+      .button-links:hover{
+        color: rgb(255, 255, 255);
+      }
+      .price-det{
+        margin-top: -1vh;
+        color: white;
+        margin-left: 25%;
+      }
+      .price-det:hover{
+        color: rgb(255, 238, 0);
+      }
+      .batch-cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .button-fix{
+        margin-left: 30%;
+      }
+      .card-height{
+        height: 60vh;
+      }
+      @media (min-width:971px) and (max-width:990px){
+        .title-a{
+          font-size: 0.35vw;
+        } 
+      }
+      @media (min-width:665px) and (max-width:990px){
+        /* .title-a{
+          font-size: 0.2vw;
+        } */
+        .button-links{
+        color: black; 
+        text-decoration: none;
+        margin-top: -2vh;
+      }
+        .price-det{
+        margin-top: -1.5vh;
+        color: white;
+      }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10 col-lg-10 col-md-12 col-sm-12 title-a" >
+          <h1>Chhatrapati Shivaji Maharaj Jaltaran Talaaw</h1>
+      
+          <h2 style="font-size: 3.2vw;">Nagar Parishad Katol</h2>
+        </div>
+      </div>
+      <!--  -->
+      <button  id="myBtn" class="btn btn-secondary button-top">
+        <a href="./swimmingpool.html" class="home-link"> Back to Home</a>
+      </button>
+      <div class="row">
+        <!-- <div class="col-8 col-lg-10 col-md-9 col-sm-8"></div>
+        <div class="col-4 col-lg-2 col-md-3 col-sm-4">
+          <button type="button" class="btn btn-primary" style="margin-top: 1vh;"><a href="#signup-form">Select Plan</a></button>
+        </div> -->
+        
+      </div>
+      <!-- batch-cards -->
+     
+      <div class="row">
+      
+        <div class="text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 title-b" style="color: white;">
+            BE OLYMPIC READY !
+          </h1>
+          <p
+            class="fs-4"
+            style="color: rgb(255, 255, 255); font-size: 3vw; font-weight: 3em"
+          >
+            We Provide International level of Coaching.
+          </p>
+        </div>
+      </div>
+      <div class="row batch-cards" style="gap: 1em">
+        <div
+          class="card text-bg-primary mb-3 col-md-4 col-sm-12 card-height"
+          style="
+            max-width: 18rem;
+            background-image: url(https://wallpapers.com/images/featured/artistic-swimming-ot4jc2e4xsvchqmo.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+           
+          "
+        >
+          <div class="card-header">WEEK 52</div>
+          <div class="card-body">
+            <h5 class="card-title">
+              Enlarge and enhance your Lungs capacity
+            </h5>
+            <p class="card-text text-card">
+              From Day 1 you get familier with water and its behaviour
+            </p>
+            <p class="card-text text-card price-det">
+              ₹ 3000/6months
+            </p>
+            <p class="d-inline-flex gap-1 button-fix">
+              <button class="btn btn-primary button-links" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Lessons
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body" style="color: black; background-color: rgba(0, 255, 255, 0.159);">
+                <a href="https://youtu.be/D0b7GrQfEIE?si=P6QfbEwIsbwaKfX6">Tutorials For Flexibility and Smoothness</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div
+          class="card text-bg-secondary mb-3 col-md-4 col-sm-12 card-height"
+          style="
+          max-width: 18rem;
+          background-image: url(https://wallpapers.com/images/hd/duo-upside-down-split-artistic-swimming-95wm9p6qsui2zh5k.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+           "
+        >
+          <div class="card-header">WEEK 100</div>
+          <div class="card-body">
+            <h5 class="card-title">Improve your techniques</h5>
+            <p class="card-text text-card">
+              Make your movements clean and smooth with
+              <strong>Flexibility</strong>
+             
+            </p>
+            <p class="card-text text-card price-det">
+              ₹ 5000/6months
+            </p>
+            <p class="d-inline-flex gap-1 button-fix">
+              <button class="btn btn-primary button-links" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Lessons
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body" style="color: black; background-color: rgba(0, 255, 255, 0.159);">
+                <a href="https://youtu.be/D0b7GrQfEIE?si=P6QfbEwIsbwaKfX6" >Tutorials For Flexibility and Smoothness</a>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="card text-bg-success mb-3 col-md-4 col-sm-12 card-height" style="max-width: 18rem;
+        background-image: url(./poolasset/images/olympicdance.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+       ">
+          <div class="card-header" >YEAR THREE</div>
+          <div class="card-body">
+            <h5 class="card-title">Get into Competition</h5>
+            <p class="card-text text-card">
+             Become tougher and increase your speed
+            </p>
+            <p class="card-text text-card price-det">
+              ₹ 10000/6months
+            </p>
+            <p class="d-inline-flex gap-1 button-fix">
+              <button class="btn btn-primary button-links"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Lessons
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body" style="color: black; background-color: rgba(0, 255, 255, 0.159);">
+                <a href="https://youtu.be/D0b7GrQfEIE?si=P6QfbEwIsbwaKfX6">Tutorials For Flexibility and Smoothness</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+     
+
+      <!-- end of cards -->
+
+      
+    </div>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="./poolasset/images/swim-logo.jpg" alt="" width="24" height="19">
+          <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <!-- <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+          </ul> -->
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <!-- <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+          </ul> -->
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <!-- <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+     function acroPayment(){
+      alert("Payment Successful");
+      document.getElementById("display-acrobat").innerHTML = "'CONGRATULATIONS!'"  +" You are Now Successfully Registered for Artistic Training";
+      
+    } 
+     // Get the button:
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     mybutton.style.display = "block";
+   } else {
+     mybutton.style.display = "none";
+   }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+   document.body.scrollTop = 0; // For Safari
+   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  </script>
+</html>

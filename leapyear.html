@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <style>
+        #display {
+            height: 30%;
+            width: 100%;
+            background-color: rgba(151, 151, 151, 0.4);
+        }
+
+        .body {
+            background-image: url("https://i.pinimg.com/originals/dc/df/f1/dcdff1e078e62b30ab271125ef39e464.jpg");
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+    <script>
+        function leapYear() {
+           let x = Number(document.getElementById("input").value);
+           let output ="";
+           
+            if( (x % 400 == 0) &&(x% 100 ==0) ||((x%4==0)&&(x%100!=0)))   {
+            output = "It is a Leap Year";
+            document.getElementById("display").innerHTML= output;
+            
+           }
+          
+          
+           else {
+            output="It is Not  a Leap Year"
+            document.getElementById("display").innerHTML= output;
+           }
+           
+        }
+
+
+
+
+    </script>
+</head>
+
+<body class="body">
+    <div>
+        <div id="display"></div>
+        <input type="number" id="input">
+        <button onclick="leapYear()">Click</button>
+    </div>
+</body>
+
+</html>

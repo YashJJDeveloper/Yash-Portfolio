@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swimming Pool</title>
+    <!-- css -->
+    <link rel="icon" href="./poolasset/images/swim-logo.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- js -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-image: linear-gradient(to right, rgb(0, 78, 138), rgb(2, 174, 168),  rgb(21, 201, 141), rgb(0, 98, 67));
+        position: relative;
+        overflow: scroll;
+        margin-top: 2vh;
+
+        scroll-behavior: smooth;
+       
+      }
+     
+
+      h3 {
+        color: rgb(0, 0, 0);
+      }
+      h3:hover {
+        color: rgb(229, 255, 0);
+      }
+      h5 {
+        color: rgb(2, 2, 2);
+      }
+      p {
+        color: black;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .home-links:hover {
+        text-decoration: underline solid aqua;
+      }
+      .title-a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: bolder ;
+        background-image: url(https://i3.wp.com/w0.peakpx.com/wallpaper/543/5/HD-wallpaper-shivaji-maharaj-shivaji-raje-god-shivaji-raje.jpg?resize=480%2C270&ssl=1);
+        background-size: cover;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       filter: drop-shadow(2px 2px 2px rgb(225, 203, 0));
+      }
+      .div-top {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+      }
+      #display {
+        color: antiquewhite;
+      }
+      .address-cards {
+        gap: 1vw;
+      }
+      .txt-card{
+        color: white;
+      }
+      .basic-swim{
+        background-image: url('./poolasset/images/learn-swim.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+      }
+      .basic-swim:hover{
+      animation: spin;
+        background-image: url(https://media.giphy.com/media/Joba0IHieGIeTWOwPY/giphy.gif);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  
+                  
+      }
+      
+
+     
+      .pro-swim{
+        background-image: url('./poolasset/images/pro-swim.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .pro-swim:hover{
+        background-image: url(https://media.tenor.com/relC-oh11fgAAAAd/swimming-michael-phelps.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .acro-swim{
+        background-image: url('./poolasset/images/acro-swim.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .acro-swim:hover{
+        background-image: url(https://i.redd.it/pg9nugok7gf71.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .family-swim{
+        background-image: url('./poolasset/images/family-swim.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .family-swim:hover{
+        background-image: url(https://i.pinimg.com/originals/12/16/e2/1216e23c0f40733f8c6e47ec19fdf516.gif);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .kids-swim{
+        background-image: url('./poolasset/images/kids-swimming.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .kids-swim:hover{
+        background-image: url(https://media.tenor.com/MNuYbvfXgUMAAAAM/kids-children.gif);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .ladies-swim{
+        background-image: url('./poolasset/images/ladies-swim.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .ladies-swim:hover{
+        background-image: url(https://media.tenor.com/V7bS7AH06v4AAAAM/bang-bang-kaylee-mckeown.gif);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .swim-competition{
+        background-image: url('./poolasset/images/swim-competition.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .swim-competition:hover{
+        background-image: url(https://6amcity.brightspotcdn.com/dims4/default/511735a/2147483647/strip/true/crop/600x338+0+0/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk1-prod-sixam-city.s3.us-east-2.amazonaws.com%2Fbrightspot%2F4e%2F93%2Feb011f754999913ad8e36b470a28%2Fezgif-com-crop.gif);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+
+      .tutors{
+        background-image: url('./poolasset/images/tutors.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .tutors:hover{
+        background-image: url(https://www.swimbuddies.co.uk/images/high_5.gif);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .events{
+        background-image: url('./poolasset/images/events.jpeg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+      .events:hover{
+        background-image: url(https://media3.giphy.com/media/7XbCcIFk5pndirxgwq/giphy.gif?cid=6c09b952m6zsxmv2uixjw53gudb2o2fmk2ftmyorpar5vofl&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      }
+
+
+      .button-top{
+        display: none;
+        position: fixed;
+        z-index: 99;
+        cursor: pointer;
+        bottom: 20px;
+  right: 30px;
+  background-color: teal;
+      }
+      .button-top:hover{
+        background-color: cadetblue;
+      }
+      .img-slider{
+          height: 65vh;
+        }
+        .footer-cards{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          gap: 5vw;
+        }
+        .card-link{
+          text-decoration: none;
+        }
+        .card-link:hover{
+         
+          text-decoration: underline solid white;
+        }
+      @media (min-width: 1200px) {
+        .title-a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      @media (min-width: 1024px) and (max-width: 1199px){
+        .img-slider{
+          height: 60vh;
+        }
+      }
+      @media (min-width: 992px) and (max-width: 1023px) {
+        .title-a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .img-slider{
+          height: 60vh;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        
+        .big-box{
+          padding: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .title-a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .img-slider{
+          height: 60vh;
+        }
+        .footer-cards{
+          display: flex;
+          flex-direction: row;
+          width: 80vw;
+        }
+        
+      }
+
+      @media (min-width: 576px) and (max-width: 767px) {
+        .title-a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        h1 {
+          font-size: 4.5vw;
+        }
+        h2 {
+          font-size: 4vw;
+        }
+        .img-slider{
+          height: 50vh;
+        }
+        .footer-cards{
+          display: flex;
+          flex-direction: row;
+          width: 100vw;
+        }
+        
+      }
+
+      @media (max-width: 575px) {
+        body{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+         
+        }
+        .big-box{
+          margin-left: 5vw;
+        }
+        .title-a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        h1 {
+          font-size: 4.5vw;
+        }
+        h2 {
+          font-size: 4vw;
+        }
+        .top-section {
+          display: flex;
+          flex-direction: column;
+        }
+        .img-slider{
+          height: 40vh;
+        }
+        .footer-cards{
+          display: flex;
+          flex-direction: column;
+          width: 100vw;
+        }
+      }
+    </style>
+  </head>
+  <body data-bs-theme="dark">
+    
+  <button  onclick="topFunction()" id="myBtn" class="btn btn-secondary button-top">
+     Top
+  </button>
+    <div class="container-fluid big-box">
+      <div class="row">
+        <!-- header -->
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start col-lg-12"
+          id="#home-id">
+          <img
+            src="./poolasset/images/katol-logo.jpg"
+            alt="katol-logo"
+            height="150vh"
+            width="150vw"
+            style="border-radius: 50%"
+          />
+          <div class="col-12 col-lg-10 title-a" >
+            <h1>Chhatrapati Shivaji Maharaj Jaltaran Talaaw</h1>
+
+            <h2>Nagar Parishad Katol</h2>
+          </div>
+
+          <ul
+            class="nav col-12 col-lg-auto col-md-12 me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="#home-id" class="nav-link px-2 text-secondary">Home</a>
+            </li>
+            <li>
+              <a
+                href="#plan-section"
+                class="nav-link px-2 text-white home-links"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#batch-section"
+                class="nav-link px-2 text-white home-links"
+                >Select Batches</a
+              >
+            </li>
+            <li>
+              <a
+                href="#event-section"
+                class="nav-link px-2 text-white home-links"
+                >Events Organised</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact-part"
+                class="nav-link px-2 text-white home-links"
+                >Contact and Support</a
+              >
+            </li>
+          </ul>
+
+          <form
+            class="col-4 col-lg-2 col-md-3 col-sm-3 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+          >
+            <!-- <input
+              type="search"
+              class="form-control form-control-dark"
+              placeholder="Search..."
+              aria-label="Search"
+            /> -->
+          </form>
+
+          <div class="text-end col-lg-2 col-md-6 col-sm-6 col-8">
+            <button type="button" class="btn btn-outline-light me-2">
+              Login
+            </button>
+            <button type="button" class="btn btn-warning">Sign-up</button>
+          </div>
+        </div>
+        <!-- end of header -->
+        <br />
+
+        <div class="row">
+          <!-- side-bar -->
+          <div class="col-8 col-lg-10 col-md-4 col-sm-6">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+              
+            >
+
+              Dive in to the Menu
+              
+            </button>
+
+            <div
+              class="offcanvas offcanvas-start"
+              data-bs-scroll="true"
+              tabindex="-1"
+              id="offcanvasWithBothOptions"
+              aria-labelledby="offcanvasWithBothOptionsLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel" style=" color: white;">
+                  Chhatrapati Shivaji Maharaj <br />Jaltaran Talaav <br />
+                  Katol
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <p style=" color: white;">
+                  Go through our platform and feel free to join us.
+                </p>
+                <div class="side-btns" id="side-bar">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    
+                    data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"
+                  >
+                    Book a Session/Batch
+                  </button>
+                  <div>
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                      <div class="card-body" style="width: 300px;">
+                      <a href="tel:9876543210"> <button class="btn btn-outline-primary">9876543210</button></a>
+                      </div>
+                    </div>
+                  </div><br>
+                  <button type="button" class="btn btn-success"
+                  >
+                   <a href=""> Our Achievements</a></button
+                  >
+                 <br /> <br>
+                  <button type="button" class="btn btn-success">
+                   <a href=""> Video Tutorials</a>
+                  </button>
+                  <br><br>
+                  <button type="button" class="btn btn-success">
+                    <a href=""> Read Terms and Conditions</a>
+                   </button>
+                  
+                </div>
+                <!-- <div class="" id="form-page">
+                  <form action="">
+                    <label for="">Enter Name :</label>&emsp;<input
+                      type="text"
+                      placeholder="Full Name"
+                    /><br />
+                    <br />
+                    <label for="">Contact No. :</label>&emsp;<input
+                      type="text"
+                      placeholder="Contact Number"
+                    />
+                    <br />
+                    <br />
+                    <label for="">Your Age :</label>&emsp;&emsp;
+                    <input type="number" placeholder="Age" /> <br /><br />
+                    <label for="">Preffered Time :</label>&emsp;<input
+                      type="time"
+                    />
+                    <br /><br />
+                    <label for="">Select Batch :</label>
+                    <select name="" id="">
+                      <optgroup label="Monthly Plan">
+                        <option value="">Kids-Batch (With Trainer)</option>
+                        <option value="">Family Pass (Max-5)</option>
+                        <option value="">Ladies-Special(Morning-Batch)</option>
+                        <option value="">General Batch</option>
+                      </optgroup>
+                    </select>
+                    <br />OR <br />
+                    <label for="">Select Plan :</label>
+                    <select name="" id="">
+                      <optgroup label="Quarterly Plan">
+                        <option value="">Basic</option>
+                        <option value="">Proefficient Batch</option>
+                        <option value="">Artistic(With Trainer)</option>
+                      </optgroup>
+                    </select>
+                  </form>
+                  <br />
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    onclick="sideBar()"
+                  >
+                    Bact to Menu
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    onclick="feesPage()"
+                  >
+                    Fees-Payment
+                  </button>
+                </div>
+                <div class="fees-pay" id="fee-payment">
+                  <input type="checkbox" /> I Agree your
+                  <a href="">terms and conditions <sup>*</sup></a>
+                  <input type="number" placeholder="Enter Amount" min="100" />
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    onclick="successPage()"
+                  >
+                    Pay Now
+                  </button>
+                  <p id="display"></p>
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    onclick="sideBar()"
+                  >
+                    Bact to Menu
+                  </button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <!-- end of side-bar -->
+        </div>
+        <br />
+        <br />
+      </div>
+
+      <!-- slider -->
+
+      <div class="row">
+        <div class="col-1 col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-10 col-lg-10 col-md-10 col-sm-10">
+        
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1500">
+              <img src="./poolasset/images/pool-area.jpg" class="d-block w-100 img-slider" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Family Pool</h5>
+                <p>The Funniest Way to Become Healthy</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+              <img src="./poolasset/images/pool.jpeg" class="d-block w-100 img-slider" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Family Pool</h5>
+                <p>The Funniest Destination to Become Healthy</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+              <img src="./poolasset/images/swimming-competition.webp" class="d-block w-100 img-slider" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Be Professional</h5>
+                <p>Add some Extra Skills to your Resume</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="col-1 col-lg-1  col-md-1 col-sm-1"></div>
+      </div>
+      <!--  -->
+      
+      <!--  -->
+      <!-- end of slider -->
+      <br />
+      <!-- batch-cards -->
+
+      <!-- row-1 -->
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom" id="plan-section">Our Plans</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <a href="./basic-swimming.html">
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg basic-swim"
+              >
+                <div
+                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                >
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Start With Basics
+                  </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="./poolasset/images/swim-logo.jpg"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="./pro-swimming.html">
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg pro-swim"
+               
+              >
+                <div
+                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                >
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Be Proefficient
+                  </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="./poolasset/images/swim-logo.jpg"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="./acrobatics.html">
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg acro-swim" >
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Acrobatics and Artistic Swimming
+                  </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="./poolasset/images/swim-logo.jpg"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end of row-1 -->
+      <!-- row-2 -->
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom" id="batch-section">Special Batches</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <a href="./family.html">
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg family-swim"
+              >
+                <div
+                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                >
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Family Time
+                  </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="./poolasset/images/swim-logo.jpg"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="./kids.html"
+              ><div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg kids-swim">
+                <div
+                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                >
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Kids Special
+                  </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="./poolasset/images/swim-logo.jpg"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="./ladies.html">
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg ladies-swim"
+              >
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Ladies Reserved Batch
+                  </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="./poolasset/images/swim-logo.jpg"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end of row-2 -->
+      <!-- row 3 -->
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom" id="event-section">We Organise</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <a href="./competition.html">
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg swim-competition"
+              >
+                <div
+                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                >
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Swimming Competitions
+                  </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="./poolasset/images/swim-logo.jpg"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="./tutors.html"
+              ><div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg tutors"
+              >
+                <div
+                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                >
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Experts Live Sessions
+                  </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="./poolasset/images/swim-logo.jpg"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="./events.html">
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg events"
+              >
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Events</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="./poolasset/images/swim-logo.jpg"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small></small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end of row 3 -->
+      <!-- end of batch-cards -->
+
+      
+
+      <!-- footer -->
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        id="contact-part"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          
+          <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="https://x.com/?lang=en"
+              ><img src="./poolasset/images/twitter.svg" alt="" /><svg
+                class="bi"
+                width="24"
+                height="24"
+              >
+                <use xlink:href="#twitter"></use></svg></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.instagram.com/"
+              ><img src="./poolasset/images/instagram.svg" alt="" /><svg
+                class="bi"
+                width="24"
+                height="24"
+              >
+                <use xlink:href="#instagram"></use></svg></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.facebook.com/"
+              ><img src="./poolasset/images/facebook.svg" alt="" /><svg
+                class="bi"
+                width="24"
+                height="24"
+              >
+                <use xlink:href="#facebook"></use></svg></a>
+          </li>
+        </ul>
+
+        <div class="row address-cards">
+         <div class="col-12 col-lg-12 col-md-12 col-sm-1 footer-cards">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Contact Us</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">
+                
+              </h6><br>
+              <p class="card-text txt-card" >
+               <a href="tel:+919876543210" class="card-link" > +919876543210</a> <br>
+                09:00 to 15:00
+              </p>
+              <p class="card-text txt-card">
+               <a href="tel:+919988776655" class="card-link"> +919988776655</a> <br>
+                15:00 to 21:00
+              </p>
+              
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title"> Mail</h5>
+              
+             
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="card-link" onclick="mailOne()">abc@example.com</a> <br>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="card-link" onclick="mailTwo()">xyz@sample.com</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Get Directions</h5>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.988088578436!2d78.58486177526333!3d21.27193908043887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd459e095596a7d%3A0x9083bf856435d275!2sChh.%20Shivaji%20Maharaj%20Swimming%20Pool%2C%20Katol!5e0!3m2!1sen!2sin!4v1722271195407!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+            </div>
+          </div>
+         </div>
+        </div>
+
+       
+         
+        
+      </footer>
+    </div>
+  </body>
+  <script>
+    function sideBar() {
+      document.getElementById("form-page").hidden = true;
+      document.getElementById("side-bar").hidden = false;
+      document.getElementById("fee-payment").hidden = true;
+    }
+    function formPage() {
+      document.getElementById("form-page").hidden = false;
+      document.getElementById("side-bar").hidden = true;
+      document.getElementById("fee-payment").hidden = true;
+    }
+    function feesPage() {
+      document.getElementById("form-page").hidden = true;
+      document.getElementById("side-bar").hidden = true;
+      document.getElementById("fee-payment").hidden = false;
+    }
+    function successPage() {
+      alert("Payment Successful");
+      document.getElementById("display").innerHTML =
+        "'CONGRATULATIONS!'" + " You are Now Successfully Registered";
+    }
+
+
+    // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+function mailOne() {
+            const email = 'abc@example.com';
+            navigator.clipboard.writeText(email).then(() => {
+                alert('Email copied to clipboard');
+            }).catch(err => {
+                console.error('Failed to copy email: ', err);
+            });
+        }
+function mailTwo() {
+            const email = 'abc@example.com';
+            navigator.clipboard.writeText(email).then(() => {
+                alert('Email copied to clipboard');
+            }).catch(err => {
+                console.error('Failed to copy email: ', err);
+            });
+        }
+        // function numONe() {
+        //     const email = '+919876543210';
+        //     navigator.clipboard.writeText(email).then(() => {
+        //         alert('Contact Number copied to clipboard');
+        //     }).catch(err => {
+        //         console.error('Failed to copy Number: ', err);
+        //     });
+        // }
+        // function numTwo() {
+        //     const email = '+919988776655';
+        //     navigator.clipboard.writeText(email).then(() => {
+        //         alert('Contact Number copied to clipboard');
+        //     }).catch(err => {
+        //         console.error('Failed to copy Number: ', err);
+        //     });
+        // }
+    
+
+  </script>
+</html>

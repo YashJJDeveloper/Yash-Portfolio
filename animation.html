@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            background-image: url(./assets/pro.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: scroll;
+        }
+        .anime {
+            text-align: center;
+            color: rgb(224, 115, 234);
+            animation-name: myanime;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+            font-size: 75px;
+
+        }
+
+        .anime1 {
+            text-align: center;
+            color: rgb(2, 254, 161);
+            animation-name: anime1;
+            animation-duration: 4s;
+            animation-delay: 4s;
+            animation-timing-function: ease-out;
+            font-size: 50px;
+        }
+
+        .para {
+            text-align: center;
+            color: darkgoldenrod;
+            font-size: 30px;
+            animation-duration: 4s;
+            animation-name: para;
+            animation-timing-function: ease-in;
+            animation-delay: 8s;
+            margin-top: 150px;
+
+        }
+
+        @keyframes para {
+            0% {
+                opacity: 0%;
+                transform: none;
+
+            }
+
+            100% {
+                opacity: 100%;
+                transform: none;
+            }
+        }
+
+        @keyframes myanime {
+            0% {
+                opacity: 25%;
+                transform: translateX(-500px);
+                transition: linear;
+                font-size: 25px;
+            }
+
+            50% {
+                opacity: 50%;
+                color: cornflowerblue;
+                transition: linear;
+                font-size: 50px
+            }
+
+            100% {
+                opacity: 100%;
+                transform: translateY(0px);
+                transition: linear;
+                color: turquoise;
+                font-size: 75px;
+            }
+        }
+
+        @keyframes anime1 {
+            0% {
+                opacity: 0%;
+                transform: translateX(-300px);
+                font-size: 30px;
+            }
+
+            100% {
+                opacity: 100%;
+                transform: translateX(100px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="anime">
+        <h1>This is Yash Jogekar</h1>
+    </div>
+    <div class="anime1">
+        <p> Welcome to my vlog</p>
+    </div>
+    <div class="para">
+        <p>Hello everyone, I'm Yash Jogekar. We are going to learn how to use animation in css.</p>
+        <p class="para" style="margin: 0%;"> Hope you all are doing good. Let's Start the animation coding.
+        </p>
+    </div>
+</body>
+
+</html>
