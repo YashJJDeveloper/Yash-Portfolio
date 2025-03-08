@@ -8,53 +8,262 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
-        .text-transparent{
+       /* --- Global Styles --- */
+body {
+    background: linear-gradient(to bottom right, #0F172A, #1E293B, #334155); /* Dark aesthetic */
+    color: #E0E0E0;  /* Soft white text */
+    font-family: 'Poppins', sans-serif;
+}
+.text-transparent{
             background: url("your-image.jpg") no-repeat center;
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
         }
-        a{
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: antiquewhite;
-        }
-        a:hover{
-            color: aqua;
-            text-decoration: underline;
-        }
+h1, h2, h3 {
+    color: #4ECCA3; /* Teal for headings */
+}
+
+
+/* --- Navbar --- */
+.custom-navbar {
+    background: rgba(30, 41, 59, 0.9); /* Semi-transparent dark theme */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    color: #4ECCA3 !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #E2E8F0;
+    margin: 0 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #53D1B6 !important;
+    font-weight: bold;
+}
+
+/* --- Header Section --- */
+.header-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 5%;
+    gap: 5%;
+    text-align: center;
+}
+
+.description-area {
+    border: 2px solid #4ECCA3;
+    background: rgba(30, 41, 59, 0.7);
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.917);
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+    color: #E0E0E0; /* Consistent text color */
+}
+
+.description-area:hover {
+    transform: translateY(-4px);
+    box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.6);
+}
+.profile-img{
+    height: 20%;
+    width: 20%;
+}
+
+/* --- Project Cards --- */
+.project-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project-card .card-body {
+    background: rgba(0, 0, 0, 0.17);
+    padding: 20px;
+    color: #F8F9FA;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 10%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #4ECCA3;
+    margin-bottom: 20px;
+}
+
+.links {
+    font-size: 1.2rem;
+    color: #5BC0BE;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.links:hover {
+    color: #FFD700;
+}
+
+.contact-section p {
+    margin: 10px 0;
+}
+.text-center button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+/* --- Button Styles --- */
+.btn-info a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* --- Responsive Header Section --- */
+@media (max-width: 1024px) {
+    .header-area {
+        flex-direction: column-reverse; /* Stack profile image below text */
+        text-align: center;
+        padding: 10% 5%;
+        gap: 20px;
+    }
+
+    .profile-img {
+        width: 40%;
+        height: auto;
+    }
+
+    .description-area {
+        padding: 20px;
+        font-size: 1rem;
+    }
+    .project-card-section{
+        display: flex;
+        /* flex-direction: column; */
+        gap: 20vw;
+    }
+    .contact-section {
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 1200px;
+        text-align: left;
+    }
+
+    .contact-section section {
+        flex: 1;
+    }
+
+    .links {
+        font-size: 1.3rem;
+    }
+}
+
+/* --- Mobile Screens (Tablets & Phones) --- */
+@media (max-width: 768px) {
+    .header-area {
+        padding: 15% 5%;
+    }
+
+    .profile-img {
+        width: 50%;
+        height: auto;
+    }
+
+    .description-area {
+        padding: 18px;
+        font-size: 0.95rem;
+    }
+    .contact-section {
+        padding: 30px 5%;
+    }
+
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .links {
+        font-size: 1.1rem;
+    }
+
+}
+
+/* --- Small Devices (Phones) --- */
+@media (max-width: 480px) {
+    .profile-img {
+        width: 70%;
+        height: auto;
+    }
+
+    .description-area {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+
     </style>
 </head>
 <body class="bg-dark text-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#home">My Portfolio</a>
+            <a class="navbar-brand fw-bold" href="#home">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <hr>
-    <header class="text-center py-5">
+    
+    
+   <div class="header-area">
+    <header class="text-center py-5 description-area">
         <h1>Yash Jogekar</h1>
         <p>Passionate about development and design</p>
+        <p >I'm a passionate full-stack developer with a creative edge, skilled in both front-end and back-end development. I specialize in building seamless, high-performing web applications that deliver exceptional user experiences.</p>
     </header>
+    <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG.png"  class="profile-img" alt="">
+   </div>
 
     <section id="about" class="container text-center my-5">
         <h2>A Full-Stack Developer</h2>
         <p>I am a developer who loves creating amazing projects.</p>
     </section>
 
+    <!-- project area -->
     <section id="projects" class="container my-5">
         <h2 class="text-center">Projects</h2><br>
-        <div class="row justify-content-center" style="gap: 2.5vw;">
+        <div class="row justify-content-center project-card-section" style="gap: 2.5vw;">
             <div class="col-md-4">
                 <div class="card project-card" style="background-image: url(https://w0.peakpx.com/wallpaper/797/488/HD-wallpaper-html5-metal-logo-grunge-programming-language-signs-blue-metal-background-html5-creative-programming-language-html5-logo.jpg); background-size: cover; background-position: center;">
                     <div class="card-body text-center">
@@ -85,7 +294,7 @@
             <div class="col-md-4">
                 <div class="card project-card" style="background-image: url(https://d3s1xydsbc15sr.cloudfront.net/media/elearning/skill/Bootstrap-min.jpg); background-repeat: no-repeat; background-position: center; background-size: cover">
                     <div class="card-body text-center">
-                        <h5 class="card-title text-transparent">BOOTSRAP</h5>
+                        <h5 class="card-title text-transparent">BOOTSTRAP</h5>
                         <p class="card-text text-transparent">Description of project 4</p>
                         <a href="./bootsrap-index.html" class="btn btn-primary">View Project</a>
                     </div>
@@ -96,7 +305,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title text-light">REACTJS </h5>
                         <p class="card-text text-transparent">Description of project 4</p>
-                        <a href="https://melodious-cat-fe36c6.netlify.app/" class="btn btn-primary">View Project</a>
+                        <a href="https://creative-salmiakki-fe7b43.netlify.app/" class="btn btn-primary">View Project</a>
                     </div>
                 </div>
             </div>
@@ -112,15 +321,20 @@
         </div>
     </section>
 <hr>
+<!-- contact section -->
+   <div class="contact-section">
+    <h2>Contact Me </h2>
     <section id="contact" class="text-center my-5">
-        <h2>Contact Me</h2>
-        <p><a href="mailto: example@email.com">Email: example@email.com</a></p>
-        <p><a href="tel:9876543210">Call: 9876543210</a></p>
-        <p><a href="">LinkedIn: linkedin.com/in/example</a></p>
+        
+        <p><a class="links" href="mailto: example@email.com">Email: example@email.com</a></p>
+        <p><a class="links" href="tel:9876543210">Call: 9876543210</a></p>
+        <p><a class="links" href="www.linkedin.com/in/yash-j-5a6757130">LinkedIn: linkedin.com/in/example</a></p>
     </section>
-    <section class="text-center">
-        <button class="btn btn-info" type="button"><a href="#about" style="color: black;">Back to Top</a></button>
-    </section>
+   
+   </div>
+   <section class="text-center">
+    <button class="btn btn-info" type="button"><a href="#about" style="color: black;">Back to Top</a></button>
+</section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
